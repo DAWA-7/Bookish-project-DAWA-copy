@@ -1,1 +1,14 @@
-<p>login works!</p>
+<mat-card>    
+    <form [formGroup]="frmLogin" (ngSubmit)="onSubmit()">
+        <mat-form-field class="campos-field">
+            <input matInput placeholder="Usuario" formControlName="usuario" #usuario>
+        </mat-form-field>
+
+        <mat-form-field class="campos-field">
+            <input matInput placeholder="Password" formControlName="password" #password>
+        </mat-form-field>
+
+        <button mat-raised-button color="primary">Iniciar</button>
+    </form>
+</mat-card>
+
