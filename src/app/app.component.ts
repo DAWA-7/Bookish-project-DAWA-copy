@@ -1,12 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-interface Usuarios{
-  nombres: string;
-  usuario: string;
-  correo: string;
-  contrasenia: string;
-}
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -15,10 +8,12 @@ interface Usuarios{
 export class AppComponent implements OnInit{
 
   title = 'dawa-project';
-  public Usuarios:Usuarios[]=[];
+  /*public Usuarios:Usuarios[]=[];*/
 
   ngOnInit(): void {
-    this.Usuarios = [
+
+    
+    /*this.Usuarios = [
       {
         nombres: 'Andrés Dávila',
         usuario: 'andresdav',
@@ -31,7 +26,7 @@ export class AppComponent implements OnInit{
         correo: 'helen.bernal@ug.edu.ec',
         contrasenia: '12345'
       },
-    ]
+    ]*/
   }
   
 }

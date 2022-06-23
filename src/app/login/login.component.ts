@@ -19,8 +19,8 @@ export class LoginComponent{
     })
   }
 
-  @Input()
-  Usuarios: any;
+  /*@Input()
+  Usuarios: any;*/
   
   ngOnInit(): void {
 
@@ -28,13 +28,13 @@ export class LoginComponent{
 
   onSubmit(){
     console.log(this.frmLogin.get('usuario')!.value);
-    console.log(this.Usuarios['usuario']);
+    /*console.log(this.Usuarios['usuario']);
     if((this.frmLogin.get('usuario')!.value == this.Usuarios['usuario']) && (this.frmLogin.get('password')!.value == this.Usuarios['contrasenia'])){
       this.router.navigate(['/home'])
     }
     else{
       alert("Error en las credenciales")
-    }
+    }*/
   }
 
 }

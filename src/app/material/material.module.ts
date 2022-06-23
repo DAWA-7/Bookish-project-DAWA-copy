@@ -12,8 +12,8 @@ import {MatDialogModule} from '@angular/material/dialog';
   declarations: [],
   exports: [
     MatToolbarModule, ReactiveFormsModule, MatInputModule, 
-    MatCardModule, MatToolbarModule, MatIconModule, MatDialogModule
-
+    MatCardModule, MatToolbarModule, MatIconModule, MatDialogModule,
+    MatButtonModule
   ],
   imports: [
     CommonModule

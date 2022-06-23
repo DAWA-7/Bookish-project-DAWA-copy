@@ -1,9 +1,31 @@
-mat-toolbar {
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+* {
+  font-family: 'Fredoka One', cursive;
+  /*font-family: 'Fredoka One', cursive;*/
 }
 
-.example-spacer {
-    flex: 1 1 auto;
-  }
+nav {
+    background-color: #4862AF;
+}
+
+img{
+    height: 64px;
+}
+
+.nav-link {
+    color: #e7e7e7 !important;
+    font-size: 18px;
+    transition: all 0.5s ease 0s;
+}
+.nav-link:hover {
+    background-color: #945aaf;
+    color: white !important;
+    border-radius: 10px;
+    transition: all 0.5s ease 0s;
+}
+  
+nav ul li a svg {
+    fill: #ffffff;
+}
