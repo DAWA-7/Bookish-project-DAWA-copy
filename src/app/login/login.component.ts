@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Component, Input, OnInit } from '@angular/core';
+import { FormControl, FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { MatDialogRef } from '@angular/material/dialog';
 import {Router} from '@angular/router';
 
@@ -9,27 +9,27 @@ import {Router} from '@angular/router';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent{
+  
+  public frmLogin:FormGroup;
 
-  constructor(private router: Router, private dialogRef: MatDialogRef<LoginComponent>) { }
+  constructor(private router: Router, private formBuilder: FormBuilder) { 
+    this.frmLogin = this.formBuilder.group({
+      usuario: ['',Validators.required],
+      password: ['', Validators.required]
+    })
+  }
 
-  frmLogin = new FormGroup({
-    usuario: new FormControl('',Validators.required),
-    password: new FormControl('', Validators.required)
-  })
-
-  usuarios: any;
+  @Input()
+  Usuarios: any;
+  
   ngOnInit(): void {
-    this.usuarios = [{
-        nombres: 'Andrés Dávila',
-        usuario: 'andresdav',
-        correo: 'andres.davila@ug.edu.ec',
-        contrasenia: '12345'
-      }
-    ];
+
   }
 
   onSubmit(){
-    if((this.frmLogin.value.usuario == this.usuarios.usuario) && (this.frmLogin.value.password == this.usuarios.contrasenia)){
+    console.log(this.frmLogin.get('usuario')!.value);
+    console.log(this.Usuarios['usuario']);
+    if((this.frmLogin.get('usuario')!.value == this.Usuarios['usuario']) && (this.frmLogin.get('password')!.value == this.Usuarios['contrasenia'])){
       this.router.navigate(['/home'])
     }
     else{
