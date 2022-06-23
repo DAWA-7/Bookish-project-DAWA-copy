@@ -6,10 +6,9 @@ import { HeaderComponent } from "./header/header.component";
 
 //route
 const routes:Routes=[
-    {path:'',component:HomeComponent},
-    {path:'header',component:HeaderComponent},
-    {path:'home',component:HomeComponent},
-    {path:'login',component:LoginComponent}
+    {path:'', component:HomeComponent},
+    {path:'login',component:LoginComponent},
+    {path:'home',component:HomeComponent}
 ]
 
 @NgModule({

@@ -23,7 +23,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserAnimationsModule,
     AppRouterModule
   ],
-  entryComponents: [LoginComponent],
+  entryComponents: [LoginComponent, HeaderComponent],
   providers: [],
   bootstrap: [AppComponent]
 })
