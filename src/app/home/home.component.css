@@ -1,6 +1,7 @@
 
 .col{
-    margin: 2rem;
+    margin: 0.1rem;
+    padding: 0.1rem;
 }
 
 .card-title{
@@ -15,11 +16,43 @@
 }
 
 .card{
-    box-shadow: 0px 1px 5px rgba(0, 0, 0.1);
     cursor: default;
     transition: all 400ms ease;
 }
 
 .card:hover{
     box-shadow: 1px 1px 10px rgba(0, 0, 0.2);
+}
+
+.book-name{
+    font-family: var(--ff-fredoka);
+}
+
+.book-autor{
+    font-family: var(--ff-fresca);
+}
+
+.book-name, .book-autor{
+    text-align: center;
+    color: grey;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    padding: 5px 10px 0px;
+}
+
+.card-footer{
+    translate: all 200ms ease;
+}
+
+.card-footer:hover{
+    color: green;
+}
+
+.cart-comprar{
+    color: var(--sc-7);
 }

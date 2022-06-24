@@ -27,10 +27,10 @@
   --lg-h5: 22px; /* 22px */
   --lg-p: 22px; /* 22px */
   /* Letter Spacing (--ls) */
-  --ls-h1: -0.02em;
-  --ls-h2: -0.02em;
-  --ls-h3: -0.02em;
-  --ls-h4: -0.02em;
+  --ls-h1: -0.02em; /* 0.32px */
+  --ls-h2: -0.02em; /* 0.32px */
+  --ls-h3: -0.02em; /* 0.32px */
+  --ls-h4: -0.02em; /* 0.32px */
 }
 
 h1 {
@@ -65,18 +65,11 @@ h4 {
   letter-spacing: var(--ls-h4);
 }
 
-h5 {
-  font-family: var(--ff-fredoka);
-  font-weight: var(--fw-regular);
-  font-size: var(--fs-h4);
-  line-height: var(--lg-h5);
-  /* letter-spacing: ; */
-}
-
+h5,
 a {
   font-family: var(--ff-fredoka);
   font-weight: var(--fw-regular);
-  font-size: var(--fs-h5);
+  font-size: var(--fs-h4);
   line-height: var(--lg-h5);
   /* letter-spacing: ; */
 }
