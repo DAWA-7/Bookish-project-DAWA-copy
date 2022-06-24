@@ -39,3 +39,8 @@ nav ul li a svg {
   background-color: var(--pc-hole-in-one); /*#945aaf*/
   border-radius: 10px;
 }
+
+.content {
+  width: 104px;
+  text-align: center;
+}
