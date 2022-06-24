@@ -1,0 +1,25 @@
+
+.col{
+    margin: 2rem;
+}
+
+.card-title{
+    text-align: center;
+    font-size: 20px;
+}
+
+.card-text{
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.card{
+    box-shadow: 0px 1px 5px rgba(0, 0, 0.1);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.card:hover{
+    box-shadow: 1px 1px 10px rgba(0, 0, 0.2);
+}
