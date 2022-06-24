@@ -8,6 +8,7 @@
 
 nav {
     background-color: #4862AF;
+    height: 68px;
 }
 
 img{
@@ -16,7 +17,7 @@ img{
 
 .nav-link {
     color: #e7e7e7 !important;
-    font-size: 18px;
+    font-size: 16px;
     transition: all 0.5s ease 0s;
 }
 .nav-link:hover {
