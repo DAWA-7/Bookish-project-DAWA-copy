@@ -1,32 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
-
 * {
-  font-family: 'Fredoka One', cursive;
-  /*font-family: 'Fredoka One', cursive;*/
+  font-family: var(--ff-fredoka);
 }
 
 nav {
-    background-color: #4862AF;
-    height: 68px;
+  background-color: var(--pc-amparo-blue);
+  height: 68px;
 }
 
-img{
-    height: 64px;
+img {
+  height: 64px;
 }
 
 .nav-link {
-    color: #e7e7e7 !important;
-    font-size: 16px;
-    transition: all 0.5s ease 0s;
+  color: var(--tce-1) !important;
+  font-size: 16px;
+  transition: all 0.5s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
 }
 .nav-link:hover {
-    background-color: #945aaf;
-    color: white !important;
-    border-radius: 10px;
-    transition: all 0.5s ease 0s;
+  background-color: var(--pc-hole-in-one); /*#945aaf*/
+  color: var(--tce-1) !important;
+  border-radius: 10px;
+  transition: all 0.5s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
 }
-  
+
 nav ul li a svg {
-    fill: #ffffff;
+  fill: var(--tce-1);
 }
