@@ -34,3 +34,8 @@ img {
 nav ul li a svg {
   fill: var(--tce-1);
 }
+
+.active {
+  background-color: var(--pc-hole-in-one); /*#945aaf*/
+  border-radius: 10px;
+}
