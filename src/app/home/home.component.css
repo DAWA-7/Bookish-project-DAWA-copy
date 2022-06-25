@@ -1,58 +1,61 @@
-
-.col{
-    margin: 0.1rem;
-    padding: 0.1rem;
+.col {
+  margin: 0.1rem;
+  padding: 0.1rem;
 }
 
-.card-title{
-    text-align: center;
-    font-size: 20px;
+.card-title {
+  text-align: center;
+  font-size: 20px;
 }
 
-.card-text{
-    text-align: center;
-    font-size: 15px;
-    font-weight: bold;
+.card-text {
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
 }
 
-.card{
-    cursor: default;
-    transition: all 400ms ease;
+.card {
+  cursor: default;
+  transition: all 400ms ease;
 }
 
-.card:hover{
-    box-shadow: 1px 1px 10px rgba(0, 0, 0.2);
+.card:hover {
+  box-shadow: 1px 1px 10px rgba(0, 0, 0.2);
 }
 
-.book-name{
-    font-family: var(--ff-fredoka);
+.news > .card-text {
+  padding-right: 10px;
+}
+.book-name {
+  font-family: var(--ff-fredoka);
 }
 
-.book-autor{
-    font-family: var(--ff-fresca);
+.book-autor {
+  font-family: var(--ff-fresca);
 }
 
-.book-name, .book-autor{
-    text-align: center;
-    color: grey;
-    font-weight: bold;
-    font-size: 15px;
-    text-align: center;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    -webkit-box-orient: vertical;
-    white-space: normal;
-    padding: 5px 10px 0px;
+.book-name,
+.book-autor {
+  text-align: center;
+  color: grey;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+  padding: 5px 10px 0px;
 }
 
-.card-footer{
-    translate: all 200ms ease;
+.card-footer {
+  translate: all 200ms ease;
 }
 
-.card-footer:hover{
-    color: green;
+.card-footer:hover {
+  color: green;
 }
 
-.cart-comprar{
-    color: var(--sc-7);
+.cart-comprar {
+  color: var(--sc-7);
 }
