@@ -1,6 +1,6 @@
 .col {
-  margin: 0.1rem;
-  padding: 0.1rem;
+  margin: 0.5rem;
+  padding: 0rem;
 }
 
 .card-title {
@@ -60,10 +60,6 @@
   color: var(--sc-7);
 }
 
-/* .book-container {
-  height: 342px;
-  width: 215px;
-} */
 
 .card-img-top {
   height: 342px;
