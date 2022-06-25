@@ -60,6 +60,10 @@
   color: var(--sc-7);
 }
 
+.book-container {
+  height: 342px;
+  width: 215px;
+}
 
 .card-img-top {
   height: 342px;
