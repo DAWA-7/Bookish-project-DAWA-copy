@@ -1,4 +1,5 @@
-interface Usuarios{
+export interface User{
+    cedula:number;
     nombres: string;
     usuario: string;
     correo: string;

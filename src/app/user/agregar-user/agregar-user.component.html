@@ -1,0 +1,42 @@
+<h1 mat-dialog-title>Modificar Usuario</h1>
+<div mat-dialog-content>
+
+    <form [formGroup]='userForm' class="example-form" (ngSubmit)="agregarUsuario()">
+
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Cédula</mat-label>
+            <input formControlName="cedula" type="number" matInput placeholder="0708996657" #cedula>
+        </mat-form-field><br>
+
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Nombre completo</mat-label>
+            <input matInput formControlName="nombres" type="text" placeholder="Guillermo Rafael" #nombres>
+        </mat-form-field><br>
+
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Usuario</mat-label>
+            <input formControlName="usuario" type="text" matInput placeholder="guillera" #usuario>
+        </mat-form-field><br>
+
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Correo</mat-label>
+            <input formControlName="correo" matInput placeholder="correo@algo.com" #correo>
+        </mat-form-field><br>
+
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Contraseña</mat-label>
+            <input formControlName="contrasenia" type="password" matInput placeholder="*********" #contrasenia>
+        </mat-form-field>
+
+
+        <div class="divBtnModificar">
+            <button type="submit" [disabled]="userForm.invalid" mat-raised-button color="primary"
+                (click)="closeDialog()">{{actionBtn}}</button>
+            <button style="margin-left: 8px;" mat-raised-button color="warn" mat-dialog-close>Cancelar</button>
+
+        </div>
+
+    </form>
+
+
+</div>
