@@ -1,6 +1,9 @@
 import { EventEmitter, Injectable } from '@angular/core';
 import { User } from '../interfaces/user';
 
+@Injectable({
+  providedIn: 'root'
+})
 export class UsusuarioService {
 
   ELEMENT_DATA: User[] = [
