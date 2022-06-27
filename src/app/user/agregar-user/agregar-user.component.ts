@@ -39,10 +39,10 @@ export class AgregarUserComponent implements OnInit {
     if(this.editarDatos){
       this.actionBtn = "Actualizar"
       this.userForm.controls['cedula'].setValue(this.editarDatos.cedula),
-      this.userForm.controls['nombre'].setValue(this.editarDatos.nombres),
-      this.userForm.controls['apellido'].setValue(this.editarDatos.usuario),
-      this.userForm.controls['direccion'].setValue(this.editarDatos.correo),
-      this.userForm.controls['edad'].setValue(this.editarDatos.contrasenia)
+      this.userForm.controls['nombres'].setValue(this.editarDatos.nombres),
+      this.userForm.controls['usuario'].setValue(this.editarDatos.usuario),
+      this.userForm.controls['correo'].setValue(this.editarDatos.correo),
+      this.userForm.controls['contrasenia'].setValue(this.editarDatos.contrasenia)
     }
 
     

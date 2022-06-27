@@ -15,7 +15,7 @@ import { Router } from '@angular/router';
 export class ListarUserComponent implements OnInit {
 
   listUsuario: User[] = []
-  displayedColumns: string[] = ['cedula', 'nombres', 'usuario', 'correo', 'contrasenia'];
+  displayedColumns: string[] = ['cedula', 'nombres', 'usuario', 'correo', 'contrasenia', 'modificar'];
   //para llamar al matdialog
   dataSource = new MatTableDataSource<any>;
   constructor(private usuerService: UsusuarioService, public dialog: MatDialog) {}

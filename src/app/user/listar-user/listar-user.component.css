@@ -1,0 +1,13 @@
+mat-form-field{
+    margin-top: 40px;
+}
+
+.container{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+th{
+    font-family: var(--ff-fresca);
+    font-size: var(--fs-h4);
+}
