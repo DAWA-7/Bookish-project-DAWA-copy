@@ -7,9 +7,9 @@ import { User } from '../interfaces/user';
 export class UsusuarioService {
 
   ELEMENT_DATA: User[] = [
-    {cedula: 351216, nombres: 'Guiller Rafael', usuario: "Correa Lasso", correo: 'Av. Ecuador entre Bco.Guayaquil y Belgica', contrasenia:'32'},
-    {cedula: 351216, nombres: 'Ernesto Rafael', usuario: "Suarez Ramirez", correo: 'Alborada', contrasenia:'22'},
-    {cedula: 351216, nombres: 'Vanessa Maria', usuario: "Ramirez Ugarte", correo: '9 de Octubre', contrasenia:'45'},
+    {cedula: 9123456789, nombres: 'Andres Davila', usuario: 'andresdav', correo: 'andres.davila@ug.edu.ec', contrasenia: '12345'}, 
+    {cedula: 9236548932, nombres: 'Helen bernal', usuario: 'helenber', correo: 'helen.bernal@ug.edu.ec', contrasenia: '12345'}, 
+    {cedula: 9654893217, nombres: 'Nefi Reyes', usuario: 'nefirey', correo:'nefi.reyes@ug.edu.ec', contrasenia: '12345'},  
   ];  
   constructor() { }
 
