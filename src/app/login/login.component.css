@@ -3,3 +3,24 @@
     margin-left: 20%;
     margin-right: 20%;
 }
+
+.container{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+mat-card{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+button{
+    width:50%;
+    margin-left:25%;
+    margin-right:25%;
+}
