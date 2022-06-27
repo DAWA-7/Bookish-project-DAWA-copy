@@ -63,7 +63,7 @@ export class AgregarUserComponent implements OnInit {
         
       }
       this.router.navigate(['/listar-catalogo'])
-      .then(()=>this.router.navigate([''],{state:{editarDatos: this._serviceUsuer.agregarUsuario(user)}}))
+      .then(()=>this.router.navigate(['/listar-user'],{state:{editarDatos: this._serviceUsuer.agregarUsuario(user)}}))
 
     }else{
       const user: User = {
@@ -74,7 +74,7 @@ export class AgregarUserComponent implements OnInit {
         contrasenia: this.userForm.value.contrasenia
       }
       this.router.navigate(['/listar-catalogo'])
-      .then(()=>this.router.navigate(['/'],{state:{editarDatos: this._serviceUsuer.updateUser(user)}}))
+      .then(()=>this.router.navigate(['/listar-user'],{state:{editarDatos: this._serviceUsuer.updateUser(user)}}))
     }
     
     // window.location.reload()
