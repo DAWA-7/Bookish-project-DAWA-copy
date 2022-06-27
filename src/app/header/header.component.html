@@ -1,22 +1,12 @@
 <nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
   <div class="container">
     <a class="navbar-brand" href="">
-      <img
-        src="../../assets/img/Bookish-logo.png"
-        alt="Bookish-logo"
-        height="50"
-        class="d-inline-block align-text-top"
-      />
+      <img src="../../assets/img/Bookish-logo.png" alt="Bookish-logo" height="50"
+        class="d-inline-block align-text-top" />
     </a>
-    <button
-      class="navbar-toggler font-weight-bold text-white rounded"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarResponsive"
-      aria-controls="navbarResponsive"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
+    <button class="navbar-toggler font-weight-bold text-white rounded" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+      aria-label="Toggle navigation">
       <i class="bi bi-list"></i>
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -25,19 +15,13 @@
           <a class="nav-link py-3 px-0 px-lg-3 rounded content" href="">Home</a>
         </li>
         <li class="nav-item mx-0 mx-lg-1">
-          <a class="nav-link py-3 px-0 px-lg-3 rounded content" href=""
-            >Catálogo</a
-          >
+          <a class="nav-link py-3 px-0 px-lg-3 rounded content" [routerLink]="'/listar-user'">Catálogo</a>
         </li>
         <li class="nav-item mx-0 mx-lg-1">
-          <a class="nav-link py-3 px-0 px-lg-3 rounded content" href=""
-            >Noticias</a
-          >
+          <a class="nav-link py-3 px-0 px-lg-3 rounded content" href="">Noticias</a>
         </li>
         <li class="nav-item mx-0 mx-lg-1">
-          <a class="nav-link py-3 px-0 px-lg-3 rounded content" href=""
-            >Contacto</a
-          >
+          <a class="nav-link py-3 px-0 px-lg-3 rounded content" href="">Contacto</a>
         </li>
       </ul>
       <ul class="navbar-nav">
@@ -48,16 +32,11 @@
         </li>
         <li class="nav-item mx-0 mx-lg-1">
           <a class="nav-link py-3 px-0 px-lg-3 rounded" href="">
-            <i
-              class="bi bi-cart-fill"
-              style="font-size: 1.3rem; color: white"
-            ></i>
+            <i class="bi bi-cart-fill" style="font-size: 1.3rem; color: white"></i>
           </a>
         </li>
         <li class="nav-item mx-0 mx-lg-1">
-          <a class="nav-link py-3 px-0 px-lg-3 rounded" (click)="sendLogin()"
-            >Inicia Sesión</a
-          >
+          <a class="nav-link py-3 px-0 px-lg-3 rounded" (click)="sendLogin()">Inicia Sesión</a>
         </li>
       </ul>
     </div>
