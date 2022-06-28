@@ -36,8 +36,13 @@
             <i class="bi bi-cart-fill" style="font-size: 1.3rem; color: white"></i>
           </a>
         </li>
-        <li class="nav-item mx-0 mx-lg-1">
-          <a class="nav-link py-3 px-0 px-lg-3 rounded" (click)="sendLogin()">Inicia Sesión</a>
+        <li class="nav-item mx-0 mx-lg-1" *ngIf="isLogged === false">
+          <a  class="nav-link py-3 px-0 px-lg-3 rounded" (click)="sendLogin()">Inicia Sesión</a>
+          a
+        </li>
+
+        <li class="nav-item mx-0 mx-lg-1" *ngIf="isLogged === true">
+          <a *ngIf="isLogged" class="nav-link py-3 px-0 px-lg-3 rounded" (click)="cerrarSesion()">Cerrar Sesion</a>
         </li>
       </ul>
     </div>
