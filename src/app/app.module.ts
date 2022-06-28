@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AgregarUserComponent } from './user/agregar-user/agregar-user.component';
 import { ListarUserComponent } from './user/listar-user/listar-user.component';
+import { MostrarCatalogoComponent } from './catalogo/mostrar-catalogo/mostrar-catalogo.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,6 +20,7 @@ import { ListarUserComponent } from './user/listar-user/listar-user.component';
     HomeComponent,
     ListarUserComponent,
     AgregarUserComponent,
+    MostrarCatalogoComponent
   ],
   imports: [
     BrowserModule,

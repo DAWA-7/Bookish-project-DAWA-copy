@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+<!--<nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
   <div class="container">
     <a class="navbar-brand" href="">
       <img src="../../assets/img/Bookish-logo.png" alt="Bookish-logo" height="50"
@@ -11,11 +11,12 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav mx-auto">
-        <li class="nav-item mx-0 mx-lg-1 active">
+        <li class="nav-item mx-0 mx-lg-1">
           <a class="nav-link py-3 px-0 px-lg-3 rounded content" href="">Home</a>
         </li>
         <li class="nav-item mx-0 mx-lg-1">
-          <a class="nav-link py-3 px-0 px-lg-3 rounded content" href="">Catálogo</a>
+          <a class="nav-link py-3 px-0 px-lg-3 rounded content" [routerLink]="'/mostrar-catalogo'"
+            routerLinkActive="mat-accent">Catálogo</a>
         </li>
         <li class="nav-item mx-0 mx-lg-1">
           <a class="nav-link py-3 px-0 px-lg-3 rounded content" href="">Noticias</a>
@@ -41,4 +42,27 @@
       </ul>
     </div>
   </div>
-</nav>
+</nav>-->
+
+<mat-toolbar color="primary">
+  <a class="navbar-brand" href="">
+    <img src="../../assets/img/Bookish-logo.png" alt="Bookish-logo" height="50" class="d-inline-block align-text-top" />
+  </a>
+  <button mat-flat-button color="primary">Home</button>
+  <button mat-flat-button color="primary">Catálogo</button>
+  <button mat-flat-button color="primary">Noticias</button>
+  <button mat-flat-button color="primary">Contacto</button>
+  <button mat-icon-button color="primary">
+    <mat-icon>shopping_cart</mat-icon>
+  </button>
+  <button mat-icon-button color="primary">
+    <mat-icon>build</mat-icon>
+  </button>
+  <button mat-flat-button [matMenuTriggerFor]="menu" color="primary">Inicie Sesión</button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>Perfil</button>
+    <button mat-menu-item>Dashboard</button>
+    <button mat-menu-item>Mis compras</button>
+    <button mat-menu-item>Cerrar Sesión</button>
+  </mat-menu>
+</mat-toolbar>

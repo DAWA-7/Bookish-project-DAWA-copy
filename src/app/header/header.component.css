@@ -44,3 +44,7 @@ nav ul li a svg {
   width: 104px;
   text-align: center;
 }
+
+ul li a:active{
+  background-color: blue;
+}

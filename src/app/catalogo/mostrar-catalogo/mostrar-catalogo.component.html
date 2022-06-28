@@ -1,0 +1,162 @@
+<mat-form-field>
+    <mat-label>Filtro</mat-label>
+    <input matInput (keyup)="applyFilter($event)" placeholder="Ex. ium" #input>
+    <mat-icon matPrefix>search</mat-icon>
+</mat-form-field>
+
+<mat-sidenav-container class="catalogo-container">
+    <mat-sidenav class="sidenav" mode="side" opened>
+        <mat-action-list>
+            <button mat-list-item> Aventura </button>
+            <button mat-list-item> Ciencia Ficción </button>
+            <button mat-list-item> Histórica </button>
+            <button mat-list-item> Juvenil </button>
+            <button mat-list-item> Niños </button>
+            <button mat-list-item> Romance </button>
+            <button mat-list-item> Terror </button>
+        </mat-action-list>
+        <!--<button mat-button>
+            <mat-icon>access_time</mat-icon> Añadido Recientemente
+        </button>
+        <button mat-button>
+            <i class="bi bi-magic">Ciencia Ficción</i>
+        </button>
+        <button mat-button>
+            <i class="bi bi-book-half">Romance</i>
+        </button>
+        <button mat-button>
+            <i class="bi bi-eyeglasses">Juvenil</i>
+        </button>
+        <button mat-button>
+            <i class="bi bi-book-half">Histórica</i>
+        </button>
+        <button mat-button>
+            <i class="bi bi-book-half">Terror</i>
+        </button>
+        <button mat-button>
+            <i class="bi bi-book-half">Aventura</i>
+        </button>
+        <button mat-button>
+            <i class="bi bi-moon-fill">Niños</i>
+        </button>-->
+    </mat-sidenav>
+    <mat-sidenav-content class="content">
+        <div class="container-xl mt-5 mb-5">
+            <div class="row row-cols-6">
+                <!-- Card -->
+                <div class="col">
+                    <div class="card">
+                        <img src="../../assets/img/books/Caraval.webp" alt="img1" class="card-img-top" />
+                        <div class="card-body">
+                            <p class="book-name">Bratva</p>
+                            <p class="book-autor">Gleen Black</p>
+                        </div>
+                        <div class="card-footer btn">
+                            <div class="row">
+                                <div class="col-sm"></div>
+                                <div class="col-sm" style="font-size: 20px; font-weight: bold; text-align: center">
+                                    $63.00
+                                </div>
+                                <div class="col-sm cart-comprar">
+                                    <i class="bi bi-cart-fill" style="font-size: 1.5rem"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card -->
+                <div class="col">
+                    <div class="card">
+                        <img src="../../assets/img/books/Damian.webp" alt="img1" class="card-img-top" />
+                        <div class="card-body">
+                            <p class="book-name">Bratva</p>
+                            <p class="book-autor">Gleen Black</p>
+                        </div>
+                        <div class="card-footer btn">
+                            <div class="row">
+                                <div class="col-sm"></div>
+                                <div class="col-sm" style="font-size: 20px; font-weight: bold; text-align: center">
+                                    $52.00
+                                </div>
+                                <div class="col-sm cart-comprar">
+                                    <i class="bi bi-cart-fill" style="font-size: 1.5rem"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card -->
+                <div class="col">
+                    <div class="card">
+                        <img src="../../assets/img/books/Lavinia.webp" alt="img1" class="card-img-top" />
+                        <div class="card-body">
+                            <p class="book-name">Bratva</p>
+                            <p class="book-autor">Gleen Black</p>
+                        </div>
+                        <div class="card-footer btn">
+                            <div class="row">
+                                <div class="col-sm"></div>
+                                <div class="col-sm" style="font-size: 20px; font-weight: bold; text-align: center">
+                                    $32.00
+                                </div>
+                                <div class="col-sm cart-comprar">
+                                    <i class="bi bi-cart-fill" style="font-size: 1.5rem"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card -->
+                <div class="col">
+                    <div class="card">
+                        <img src="../../assets/img/books/Bratva.webp" alt="img1" class="card-img-top" />
+                        <div class="card-body">
+                            <p class="book-name">Bratva</p>
+                            <p class="book-autor">Gleen Black</p>
+                        </div>
+                        <div class="card-footer btn">
+                            <div class="row">
+                                <div class="col-sm"></div>
+                                <div class="col-sm" style="font-size: 20px; font-weight: bold; text-align: center">
+                                    $12.00
+                                </div>
+                                <div class="col-sm cart-comprar">
+                                    <i class="bi bi-cart-fill" style="font-size: 1.5rem"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card -->
+                <div class="col">
+                    <div class="card">
+                        <img src="../../assets/img/books/Nerd.webp" alt="img1" class="card-img-top" />
+                        <div class="card-body">
+                            <p class="book-name">Bratva</p>
+                            <p class="book-autor">Gleen Black</p>
+                        </div>
+                        <div class="card-footer btn">
+                            <div class="row">
+                                <div class="col-sm"></div>
+                                <div class="col-sm" style="font-size: 20px; font-weight: bold; text-align: center">
+                                    $12.00
+                                </div>
+                                <div class="col-sm cart-comprar">
+                                    <i class="bi bi-cart-fill" style="font-size: 1.5rem"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+            </div>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>

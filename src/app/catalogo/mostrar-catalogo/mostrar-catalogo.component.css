@@ -1,0 +1,74 @@
+.catalogo-container {
+  height: 100vh;
+  background: #eee;
+}
+
+.sidenav{
+  width: 15%;
+}
+
+mat-action-list{
+  margin-top: 20px;
+}
+
+.mat-form-field{
+  margin-top: 40px;
+  margin-left: 15px;
+}
+
+input{
+  border-radius: 20px black !important;
+}
+
+img{
+  height: 280px;
+}
+
+
+/**/
+.card-title {
+  text-align: center;
+  font-size: 20px;
+}
+
+.card-text {
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.card {
+  cursor: pointer;
+  transition: all 400ms ease;
+}
+
+.card:hover {
+  box-shadow: 1px 1px 10px rgba(0, 0, 0.2);
+}
+
+.book-name,
+.book-autor {
+  text-align: center;
+  color: grey;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+  padding: 5px 10px 0px;
+}
+
+.card-footer {
+  translate: all 200ms ease;
+}
+
+.card-footer:hover {
+  color: green;
+}
+
+.cart-comprar {
+  color: var(--sc-7);
+}
+

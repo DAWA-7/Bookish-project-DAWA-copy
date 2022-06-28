@@ -9,13 +9,17 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatTableModule} from '@angular/material/table';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatListModule} from '@angular/material/list';
+import {MatMenuModule} from '@angular/material/menu';
 
 @NgModule({
   declarations: [],
   exports: [
     MatToolbarModule, ReactiveFormsModule, MatInputModule, 
     MatCardModule, MatToolbarModule, MatIconModule, MatDialogModule,
-    MatButtonModule,MatTableModule,MatFormFieldModule,FormsModule
+    MatButtonModule,MatTableModule,MatFormFieldModule,FormsModule,
+    MatSidenavModule,MatListModule,MatMenuModule
   ],
   imports: [
     CommonModule

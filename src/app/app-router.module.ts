@@ -6,6 +6,7 @@ import { HomeComponent } from "./home/home.component";
 import { HeaderComponent } from "./header/header.component";
 import { ListarCatalogoComponent } from './catalogo/listar-catalogo/listar-catalogo.component';
 import { ListarUserComponent } from './user/listar-user/listar-user.component';
+import { MostrarCatalogoComponent } from './catalogo/mostrar-catalogo/mostrar-catalogo.component';
 
 //route
 const routes:Routes=[
@@ -15,6 +16,7 @@ const routes:Routes=[
     {path:'agregar-user',component:AgregarUserComponent},
     {path:'listar-user',component:ListarUserComponent},
     {path:'listar-catalogo',component:ListarCatalogoComponent},
+    {path:'mostrar-catalogo',component:MostrarCatalogoComponent},
 ]
 
 @NgModule({
